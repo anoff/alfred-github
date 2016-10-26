@@ -77,7 +77,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Alfred 3 workflow to find to projects in github</string>
+				<string>Search for github projects</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
