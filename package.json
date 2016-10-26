@@ -1,0 +1,39 @@
+{
+  "name": "alfred-github",
+  "version": "1.0.0",
+  "description": "Alfred 3 workflow to find github repos",
+  "license": "MIT",
+  "repository": "anoff/alfred-github",
+  "author": {
+    "name": "anoff",
+    "email": "offenhaeuser@gmail.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "postinstall": "alfy-init"
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "info.plist"
+  ],
+  "keywords": [
+    "alfred",
+    "workflow",
+    "github"
+  ],
+  "dependencies": {
+    "alfy": "^0.5.0"
+  },
+  "devDependencies": {
+    "alfy-test": "^0.3.0",
+    "ava": "^0.15.2",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true
+  }
+}
