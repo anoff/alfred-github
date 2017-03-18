@@ -31,7 +31,7 @@
   "devDependencies": {
     "alfy-test": "^0.3.0",
     "ava": "^0.18.1",
-    "xo": "^0.17.1"
+    "xo": "^0.18.0"
   },
   "xo": {
     "esnext": true
