@@ -15,7 +15,7 @@ alfy.fetch('https://api.github.com/search/repositories', {
 			mods: {
 				cmd: {
 					arg: elm.html_url,
-					subtitle: `Watch: ${elm.stargazers_count}  Star: ${elm.watchers_count}  Fork: ${elm.forks_count}`
+					subtitle: `Star: ${elm.stargazers_count}  Fork: ${elm.forks_count}`
 				}
 			}
 		}));
