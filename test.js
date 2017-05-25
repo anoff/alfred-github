@@ -4,6 +4,7 @@ import alfyTest from 'alfy-test';
 test(async t => {
 	const alfy = alfyTest();
 	const result = await alfy('node');
+	delete result[0].mods;
 
 	t.deepEqual(result[0],
 		{
