@@ -1,6 +1,6 @@
 {
   "name": "alfred-github",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Alfred 3 workflow to find github repos",
   "license": "MIT",
   "repository": "anoff/alfred-github",
