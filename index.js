@@ -11,7 +11,13 @@ alfy.fetch('https://api.github.com/search/repositories', {
 		.map(elm => ({
 			title: elm.full_name,
 			subtitle: elm.description,
-			arg: elm.html_url
+			arg: elm.html_url,
+			mods: {
+				cmd: {
+					arg: elm.html_url,
+					subtitle: `Watch: ${elm.stargazers_count}  Star: ${elm.watchers_count}  Fork: ${elm.forks_count}`
+				}
+			}
 		}));
 	alfy.output(items);
 });
