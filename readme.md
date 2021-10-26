@@ -1,4 +1,4 @@
-# alfred-github [![Build Status](https://travis-ci.org/anoff/alfred-github.svg?branch=master)](https://travis-ci.org/anoff/alfred-github)
+# alfred-github
 
 > Alfred workflow to find to projects in GitHub
 
