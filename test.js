@@ -1,7 +1,7 @@
 import test from 'ava';
 import alfyTest from 'alfy-test';
 
-test(async t => {
+test('default', async t => {
 	const alfy = alfyTest();
 	const result = await alfy('node');
 	delete result[0].mods;
@@ -10,7 +10,7 @@ test(async t => {
 		{
 			title: 'nodejs/node',
 			subtitle: 'Node.js JavaScript runtime :sparkles::turtle::rocket::sparkles:',
-			arg: 'https://github.com/nodejs/node'
-		}
+			arg: 'https://github.com/nodejs/node',
+		},
 	);
 });

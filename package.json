@@ -1,15 +1,16 @@
 {
   "name": "alfred-github",
   "version": "1.1.0",
-  "description": "Alfred 3 workflow to find github repos",
+  "description": "Alfred workflow to find github repos",
   "license": "MIT",
   "repository": "anoff/alfred-github",
   "author": {
     "name": "anoff",
     "email": "offenhaeuser@gmail.com"
   },
+  "type": "module",
   "engines": {
-    "node": ">=4"
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
   },
   "scripts": {
     "test": "xo && ava",
@@ -26,14 +27,11 @@
     "github"
   ],
   "dependencies": {
-    "alfy": "^0.7.0"
+    "alfy": "^0.12.1"
   },
   "devDependencies": {
-    "alfy-test": "^0.3.0",
-    "ava": "^0.25.0",
-    "xo": "^0.19.0"
-  },
-  "xo": {
-    "esnext": true
+    "alfy-test": "^0.4.2",
+    "ava": "^3.15.0",
+    "xo": "^0.45.0"
   }
 }

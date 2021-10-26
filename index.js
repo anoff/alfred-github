@@ -1,12 +1,13 @@
-'use strict';
-const alfy = require('alfy');
+import alfy from 'alfy';
 
-alfy.fetch('https://api.github.com/search/repositories', {
-	query: {
-		q: alfy.input
-	},
-	maxAge: 10 * 60 * 1000
-}).then(data => {
+(async () => {
+	const data = await alfy.fetch('https://api.github.com/search/repositories', {
+		query: {
+			q: alfy.input,
+		},
+		maxAge: 10 * 60 * 1000,
+	});
+
 	const items = data.items
 		.map(elm => ({
 			title: elm.full_name,
@@ -15,9 +16,9 @@ alfy.fetch('https://api.github.com/search/repositories', {
 			mods: {
 				cmd: {
 					arg: elm.html_url,
-					subtitle: `Star: ${elm.stargazers_count}  Fork: ${elm.forks_count}`
-				}
-			}
+					subtitle: `Star: ${elm.stargazers_count}  Fork: ${elm.forks_count}`,
+				},
+			},
 		}));
 	alfy.output(items);
-});
+})();
